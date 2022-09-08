@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lab Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/menu.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/labtest.css'>
+</head>
+<body>
+    <header id="header">
+        <h1>Pharmacy</h1>
+    </header>
+    
+    <nav id="navigate">
+        <ul class="menu">
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="">Our Medicines</a>
+                <ul id="medicines">
+                    <a href="#"><li>Fever</li></a>
+                    <a href="#"><li>Muscle Pains</li></a>
+                    <a href="#"><li>Cold and Cough</li></a>
+                </ul>
+            </li>
+            <li>
+                <a href="">Health Care</a>
+                <ul id="healthCare">
+                    <a href="#"><li>Baby Care</li></a>
+                    <a href="#"><li>Skin Care</li></a>
+                    <a href="#"><li>Home Care</li></a>
+                    <a href="#"><li>Personal Care</li></a>
+                    <a href="#"><li>Pet Care</li></a>
+                </ul>
+            </li>
+            <li>
+                <a href="./labtest.html">Lab Test</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <div id="lab">
+        <form action="">
+    <div id="lab-container">
+
+            <table id="lab-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <table>
+                                <tbody id="left">
+                                    <tr class="column">
+                                        <td colspan="2">
+                                            <h3>1. Your Contact Details</h3>
+                                        </td>
+                                    </tr>
+                                        
+                                    <tr class="column">
+                                        <td> <input type="text" class="text" placeholder = "Full Name" required > </td>
+                                        <td> <input type="text" class="text" placeholder = "Patient Id if exists"> </td>
+                                    </tr>
+                                    <tr class="column">
+                                        <td> <input type="text" class="text" placeholder = "Contact Number" pattern="1234567890+-" required> </td>
+                                        <td> <input type="text" class="text" placeholder = "Email id" required> </td>
+                                    </tr>
+
+                                    <tr class="column">
+                                        <td colspan="2">
+                                            <h3>2. Address</h3>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="column">
+                                        <td> <input type="text" class="text" placeholder = "H-No"> </td>
+                                        <td> <input type="text" class="text" placeholder = "Street"> </td>
+                                    </tr>
+                                    <tr class="column">
+                                        <td colspan="1"> <input type="text" class="text" placeholder = "Area"> </td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" id="lab-dropdown">
+                                            <label for="district">District </label>
+                                            <select name="district" id="district" required> 
+                                                <option value="choose">Choose</option>
+                                                <option value="banglore">Banglore</option>
+                                                <option value="chennai">Chennai</option>
+                                                <option value="delhi">Delhi</option>
+                                                <option value="kolkata">Kolkata</option>
+                                                <option value="mumbai">Mumbai</option>
+                                                <option value="pune">Pune</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                    <tr class="column">
+                                        <td colspan="2">
+                                            <h3>3. Choose a test type</h3>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="column">
+                                        <td colspan="2">
+                                            <div id="checkbox">
+                                                <input type="checkbox" id="cb1" name = "cb1" required/> 
+                                                <label for="cb1" style="margin-left: 10px;"> CBC </label> 
+                                                <br>
+                                                <input type="checkbox" id="cb2" name = "cb2" />  
+                                                <label for="cb2" style="margin-left: 10px;"> Complete Urine </label> 
+                                                <br>
+                                                <input type="checkbox" id="cb3" name = "cb3"/>  
+                                                <label for="cb3" style="margin-left: 10px;"> Lipid Profile </label>
+                                                <br>
+                                                <input type="checkbox" id="cb4" name = "cb4"/>  
+                                                <label for="cb4" style="margin-left: 10px;"> Thyroid Stimulating Hormone(TSH) </label>
+                                                <br>
+                                                <input type="checkbox" id="cb5" name = "cb5"/> 
+                                                <label for="cb5" style="margin-left: 10px;"> Glucose Test </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="column">
+                                        <td colspan="2">
+                                            <h3>4. Do you want a hard copy of the report also?</h3>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="column">
+                                        <td colspan="2" id="yesno">
+                                            <input type="radio" id="yes" name="yesno" value="yes">
+                                            <label for="yes">Yes</label><br>
+                                            <input type="radio" id="no" name="yesno" value="no">
+                                            <label for="np">No</label><br>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="column">
+                                        <td colspan="2">
+                                            <h3>5. Select Your Comfortable Date and Time</h3>
+                                        </td>
+                                    </tr>
+                                    <tr class="column">
+                                        <td colspan="2" id="date-time">
+                                            <label for="date">Date </label>
+                                            <input type="date" id="date" name="date"><br>
+                                            <label for="time">Time</label>
+                                            <input type="time" id="time" name="time">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </td>
+
+                        <td>
+                            <img src="images/Lab-Test/lab-test.jpg" alt="" id="lab-image"> 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+           
+        
+    </div>
+
+    <input id="buttons" type="reset" value="Reset">
+    <input id="buttons" type="submit" value="Submit">
+</form>
+</div>
+
+    
+
+
+    <footer id="footer">
+        &copy; copyright. Only for demonstration purposess
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+.column input, 
+.column label,
+#lab-dropdown *
+{
+    margin: 0px;
+    margin-left: 40px;
+    color: gray;
+}
+#lab{
+    margin: 40px;
+}
+
+#lab-container{
+    margin: auto;
+    height: 500px;
+    width:80%;
+    box-shadow: -3px -3px 10px 5px gray;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#lab-table{
+
+    width: 100%;
+    table-layout: inherit;
+    border-spacing: 0px;
+    margin: auto;
+
+}
+
+#lab-table  tbody tr td
+{
+    width: 50%;   
+}
+
+#lab-table tr td{
+height : 50px
+}
+
+.text{
+    border: none;
+    border-bottom: 1px solid;
+    width: 90%;
+}
+
+.column{
+    margin-left: 10px;
+}
+
+#lab-image{
+    vertical-align: bottom;
+    width: 100%;
+}
+
+td h3{
+    color: rgb(3, 3, 3);
+    margin:0px;
+    margin-left: 20px;
+}
+
+.column input[type="text"]{
+    height: 30px;
+}
+
+#district{
+    margin-left: 20px;
+    width: 120px;
+}
+
+#yesno label{
+    margin-left: 10px;
+}
+
+#date-time input{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 200px;
+}
+
+#buttons{
+    border: 2px solid rgba(137, 43, 226, 0.684);
+    background-color: rgba(137, 43, 226, 0.684);
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+
+input[type="reset"]{
+    margin-left: 42%;
+    margin-right: 20px;
+}
+
+#chekbox label{
+    margin-left: 10px;
+}

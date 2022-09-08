@@ -1,0 +1,56 @@
+#navigate{
+    position: sticky;
+}
+
+.menu{
+    margin: 0%;
+    background-color: gray;
+}
+.menu li {
+    padding: 15px;
+    display: inline-block;
+ 
+}
+
+.menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background-color: black;
+}
+
+.menu li:nth-child(2):hover #medicines,
+.menu li:nth-child(3):hover #healthCare{
+    display: block;
+} 
+
+#medicines, 
+#healthCare{
+    position : absolute;
+    width: auto;
+    max-width: 165px;
+    display: none;
+    top: 53px;
+    background-color: rgb(232, 226, 226);
+    padding: 0%;
+}
+
+#medicines a li:hover, 
+#healthCare a li:hover{
+    background-color: rgb(245, 223, 223);
+    border: 1px solid rgb(183, 171, 171);
+}
+
+#medicines a li , 
+#healthCare a li {
+    color: rgb(52, 143, 217);
+    font-size: 20px;
+}
+
+#medicines li,
+#healthCare li{
+    display: block;
+}
